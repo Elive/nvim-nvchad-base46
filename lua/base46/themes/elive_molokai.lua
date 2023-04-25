@@ -1,5 +1,10 @@
 -- Credits to original theme https=//monokai.pro/
 -- This is modified version of it
+-- Modified by Thanatermesis for Elive Linux
+--
+-- Some interesting links:
+-- Some hilight names: https://github.com/lukas-reineke/onedark.nvim/blob/master/lua/onedark.lua
+-- Darker tool: https://mdigi.tools/darken-color/
 
 local M = {}
 

@@ -50,6 +50,7 @@ local styles = {
 
   default = {
     CmpBorder = { fg = colors[cmp_ui.border_color] },
+    CmpDocBorder = { fg = colors[cmp_ui.border_color] },
   },
 
   atom = {
