@@ -16,8 +16,8 @@ M.base_30 = {
   one_bg = "#363731", -- real bg of onedark
   one_bg2 = "#3E3F39",  -- bg hilighted for "selected block"
   one_bg3 = "#464741",
-  grey = "#465457",   -- linenumbers
-  grey_fg = "#7e8e91",  -- comments
+  grey = "#465457",   -- linenumbers - same
+  grey_fg = "#7e8e91",  -- comments - same
   grey_fg2 = "#5D5E58",
   light_grey = "#64655F",
   -- red = "#e36d76",  -- orig
@@ -25,59 +25,76 @@ M.base_30 = {
   baby_pink = "#f98385",
   pink = "#f36d76",
   line = "#363942", -- for lines like vertsplit
-  green = "#96c367",
+  -- green = "#96c367",
+  green = "#a6e22e",
   vibrant_green = "#99c366",
   nord_blue = "#81A1C1",
   blue = "#51afef",
   yellow = "#e6c181",
   sun = "#fce668",
-  purple = "#c885d7",
+  -- purple = "#c885d7",
+  purple = "#ae81ff",
   dark_purple = "#b26fc1",
   teal = "#34bfd0",
-  orange = "#d39467",
-  cyan = "#41afef",
+  -- orange = "#d39467",
+  orange = "#fd971f",
+  -- cyan = "#41afef",
+  cyan = "#66d9ef",
   statusline_bg = "#2F302A",  -- statusline background
   lightbg = "#3E3F39",  -- selected statusline
   pmenu_bg = "#a9c366",  -- menu popup selection
   folder_bg = "#61afef",
 }
 
+--  Colours base00 to base07 are typically variations of a shade and run from darkest to lightest. These colours are used for foreground and background, status bars, line highlighting and such. colours base08 to base0F are typically individual colours used for types, operators, names and variables. In order to create a dark theme, colours base00 to base07 should span from dark to light. For a light theme, these colours should span from light to dark.
+
 M.base_16 = {
   -- base00 = "#272822",
-  base00 = "#1b1d1e",  -- background - XXX - done
-  base01 = "#383830",  -- bg for folded blocks
+  -- base00 = "#1b1d1e",  -- Default Background - done
+  -- base00 = "#1c1726",  -- Default Background - done - galactic-purple version
+  base00 = "#181320",  -- Default Background - done - galactic-purple version
+  base01 = "#383830",  -- Lighter Background (Used for status bars, line number and folding marks), bg for folded blocks - done
   -- base02 = "#49483e",
-  base02 = "#4e4e4e",  -- bg for visual selection - done
-  base03 = "#75715e",  -- font for folded blocks
-  base04 = "#a59f85",
-  base05 = "#f8f8f2",
-  base06 = "#f5f4f1",
-  base07 = "#f9f8f5",
-  base08 = "#fd971f",  -- same
-  base09 = "#ae81ff",  -- same
-  -- base0A = "#f4bf75",  -- variables, etc
-  -- base0A = "#a6e22e",  -- variables, etc
-  base0A = "#f92672",  -- variables, etc
-  -- base0B = "#a6e22e",  -- strings - same
+  base02 = "#1e4e4e",  -- Selection (visual) Background - done
+  -- base03 = "#75715e",  -- Comments, Invisibles, Line Highlighting, font for folded blocks
+  base03 = "#ae81ff",  -- Comments, Invisibles, Line Highlighting, font for folded blocks - done
+  -- base04 = "#a59f85",  -- Dark Foreground (Used for status bars)
+  base04 = "#FFFF00",  -- Dark Foreground (Used for status bars) - TODO: temporal to see where it is, replace by the previous one later
+  base05 = "#f8f8f2",  -- Default Foreground, Caret, Delimiters, Operators
+  base06 = "#f5f4f1",  -- Light Foreground (Not often used)
+  base07 = "#f9f8f5",  -- Light Background (Not often used)
+
+  -- base08 = "#fd971f",  -- Variables, XML Tags, Markup Link Text, Markup Lists, Diff Deleted - same
+  -- base08 = "#a6e22e",  -- Variables, XML Tags, Markup Link Text, Markup Lists, Diff Deleted - same
+  base08 = "#66d9ef",  -- Variables, XML Tags, Markup Link Text, Markup Lists, Diff Deleted - same
+  base09 = "#ae81ff",  -- Integers, Boolean, Constants, XML Attributes, Markup Link Url - same, +boolean
+  -- base0A = "#f4bf75",  -- Classes, Markup Bold, Search Text Background -
+  -- base0A = "#a6e22e",  --
+  base0A = "#f92672",  --
+  -- base0A = "#e6c181",  --
+  -- base0B = "#a6e22e",  -- Strings, Inherited Class, Markup Code, Diff Inserted - same
   base0B = "#ebe4a5",  -- strings - same
-  base0C = "#a1efe4",  -- orig
+  base0C = "#a1efe4",  -- Support, Regular Expressions, Escape Characters, Markup Quotes - orig
   -- base0C = "#66d9ef",  -- seems like we used this one?
-  -- base0D = "#66d9ef",  -- function names - same
+  -- base0D = "#66d9ef",  -- Functions, Methods, Attribute IDs, Headings - same
   base0D = "#a6e22e",  -- function names - same
-  -- base0E = "#f92672",  -- commands etc
-  base0E = "#66d9ef",  -- commands etc
-  -- base0F = "#cc6633",  -- operators
-  base0F = "#8a8a8a",  -- operators
+  base0E = "#f92672",  -- Keywords, Storage, Selector, Markup Italic, Diff Changed, commands etc
+  -- base0E = "#66d9ef",  -- commands etc
+  -- base0F = "#cc6633",  -- Deprecated, Opening/Closing Embedded Language Tags, e.g. <?php ?>, operators
+  base0F = "#999999",  -- operators
 }
 
 M.polish_hl = {
-  ["parameter"] = { fg = M.base_30.blue },
-  ["@field.key"] = { fg = M.base_30.white },
-  ["@string"] = { fg = M.base_30.sun },
-  ["@boolean"] = { fg = M.base_16.base09 },
-  ["@punctuation.bracket"] = { fg = M.base_30.sun },
-  Operator = { fg = M.base_30.red },
+  ["@variable"] = { fg = M.base_30.orange },
   ["@operator"] = { fg = M.base_30.red },
+  -- ["@punctuation.bracket"] = { fg = M.base_30.green },
+  -- ["@boolean"] = { fg = M.base_16.base09 },
+  -- ["@conditional"] = { fg = M.base_16.base0A },
+  -- ["@Folded"] = { bg = M.base_16.base00 }, -- FIXME: this doesn't works because is overwritten by base46/integrations/defaults.lua ? - TODO: define it in user's conf
+  -- ["parameter"] = { fg = M.base_30.blue },
+  -- ["@field.key"] = { fg = M.base_30.white },
+  -- ["@string"] = { fg = M.base_30.sun },
+  -- -- ["@punctuation.bracket"] = { fg = M.base_30.sun },
 }
 
 M.type = "dark"
