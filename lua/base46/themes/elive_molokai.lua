@@ -67,7 +67,8 @@ M.base_30 = {
   one_bg2 = "#44494b",  -- bg hilighted for "selected block" - 19%+ lighter than black
   -- one_bg3 = "#464741",  --   - 27% lighter than black
   -- one_bg3 = "#52416e",  --   - 27% lighter than black
-  one_bg3 = "#555b5e",  --   - 27% lighter than black
+  -- one_bg3 = "#555b5e",  --   - 27% lighter than black
+  one_bg3 = "#34bfd0",  --   - 27% lighter than black - telescope borders,
 
   grey = "#465457",   -- linenumbers - same
   -- grey = "#6e5793",   -- linenumbers - 40% lighter than black (the % here depends so choose the perfect grey!)
@@ -115,13 +116,18 @@ M.polish_hl = {
   ["@variable"] = { fg = M.base_30.orange },
   ["@operator"] = { fg = M.base_30.red },
   -- make the folded blocks having a transparent background, the text is already very visible
-  ["Folded"] = { bg = "NONE" },
+  Folded = { bg = "NONE" },
   -- make the background of the completer menu a little different
-  ["CmpPborder"] = { fg = M.base_30.black },
-  ["CmpPmenu"] = { fg = M.base_30.black2 },
+  CmpPmenu = { bg = M.base_30.black2 },
+  CmpBorder = { fg = M.base_30.one_bg3 },
   -- more visible searchings
   Search = { fg = M.base_30.base00, bg = "#FFAF00" },
   IncSearch = { fg = M.base_30.base00, bg = "#FFFF00" },
+  -- make the selector in telescope much more visual
+  TelescopeSelection = { bg = M.base_30.grey_fg2, },
+  TelescopeNormal = { bg = M.base_30.black2 },
+  TelescopePromptNormal = { bg = M.base_30.black2 },
+  -- diffNewFile = { fg = "blue" },  -- TODO: not working, only when added on M.add
 
   -- ["@diffNewFile"] = { fg = M.base_30.blue }, -- not working, needs to be in section "added" ?
   -- ["@punctuation.bracket"] = { fg = M.base_30.green },
