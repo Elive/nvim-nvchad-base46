@@ -33,7 +33,7 @@ M.base_16 = {
   base09 = "#ae81ff",  -- Integers, Boolean, Constants, XML Attributes, Markup Link Url - same, +boolean
   -- base0A = "#f4bf75",  -- Classes, Markup Bold, Search Text Background -
   -- base0A = "#a6e22e",  --
-  base0A = "#f92672",  --
+  base0A = "#f92672",  -- - TODO: this color is duplicated, try to use a different one and then set specific Highlighting for the keywords we want to have in red, this also affects the terminal feature
   -- base0A = "#e6c181",  --
   -- base0B = "#a6e22e",  -- Strings, Inherited Class, Markup Code, Diff Inserted - same
   base0B = "#ebe4a5",  -- strings - same
@@ -114,7 +114,15 @@ M.base_30 = {
 M.polish_hl = {
   ["@variable"] = { fg = M.base_30.orange },
   ["@operator"] = { fg = M.base_30.red },
+  -- make the folded blocks having a transparent background, the text is already very visible
   ["Folded"] = { bg = "NONE" },
+  -- make the background of the completer menu a little different
+  ["CmpPborder"] = { fg = M.base_30.black },
+  ["CmpPmenu"] = { fg = M.base_30.black2 },
+  -- more visible searchings
+  Search = { fg = M.base_30.base00, bg = "#FFAF00" },
+  IncSearch = { fg = M.base_30.base00, bg = "#FFFF00" },
+
   -- ["@diffNewFile"] = { fg = M.base_30.blue }, -- not working, needs to be in section "added" ?
   -- ["@punctuation.bracket"] = { fg = M.base_30.green },
   -- ["@boolean"] = { fg = M.base_16.base09 },
