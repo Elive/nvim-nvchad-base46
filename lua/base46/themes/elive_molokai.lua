@@ -52,12 +52,14 @@ M.base_30 = {
   -- black = "#272822", --  nvim bg + tab selected
   -- black = "#1b1d1e", --  nvim bg + tab selected - same
   black = M.base_16.base00, --  nvim bg + tab selected
-  -- darker_black = "#1b1f27", --   - 6%+ darker than black
+  -- darker_black = "#1b1f27", --   - 6%+ darker than black - used on Whichkey background
   -- darker_black = "#17121e", --   - 6%+ darker than black
-  darker_black = "#191b1c", --   - 6%+ darker than black
+  -- darker_black = "#191b1c", --   - 6%+ darker than black
+  darker_black = "#291d3f", --   - 6%+ darker than black
   -- black2 = "#252931",  -- tab top line - 6%+ lighter than black
   -- black2 = "#251d31",  -- tab top line - 6%+ lighter than black
   black2 = "#282b2c",  -- tab top line - 6%+ lighter than black
+  -- black2 = "#303435",  -- tab top line - 6%+ lighter than black
 
   -- one_bg = "#363731", --   - 10%+ lighter than black
   -- one_bg = "#2e243d", --   - 10%+ lighter than black
@@ -119,7 +121,7 @@ M.polish_hl = {
   Folded = { bg = "NONE" },
   -- make the background of the completer menu a little different
   CmpPmenu = { bg = M.base_30.black2 },
-  CmpBorder = { fg = M.base_30.one_bg3 },
+  CmpBorder = { fg = M.base_30.cyan },
   -- more visible searchings
   Search = { fg = M.base_30.base00, bg = "#FFAF00" },
   IncSearch = { fg = M.base_30.base00, bg = "#FFFF00" },
