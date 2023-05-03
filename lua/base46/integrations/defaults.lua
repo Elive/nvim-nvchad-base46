@@ -14,6 +14,8 @@ local defaults = {
   PmenuSel = { bg = colors.pmenu_bg, fg = colors.black },
   PmenuThumb = { bg = colors.grey },
 
+  CopilotSuggestion = { fg = colors.grey_fg },
+
   MatchParen = { link = "MatchWord" },
 
   Comment = { fg = colors.grey_fg },

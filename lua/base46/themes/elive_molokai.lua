@@ -125,6 +125,7 @@ M.polish_hl = {
   -- more visible searchings
   Search = { fg = M.base_30.base00, bg = "#FFAF00" },
   IncSearch = { fg = M.base_30.base00, bg = "#FFFF00" },
+  -- CopilotSuggestion = { fg = M.base_30.nord_blue },
   -- make the selector in telescope much more visual
   TelescopeSelection = { bg = M.base_30.grey_fg2, },
   TelescopeNormal = { bg = M.base_30.black2 },
