@@ -88,15 +88,17 @@ M.base_30 = {
   -- red = "#e36d76",  -- orig
   red = "#f92672",
   baby_pink = "#f98385",
-  pink = "#f36d76",
-  line = "#363942", -- for lines like vertsplit
+  -- pink = "#f36d76",
+  pink = "#f803b5",
+  line = "#363942", -- for lines like vertsplit (see polish_hl) and tab indetations
   -- green = "#96c367",
   green = "#a6e22e",
   -- vibrant_green = "#99c366",
   vibrant_green = "#0add08",
   nord_blue = "#81A1C1",
   blue = "#51afef",
-  yellow = "#e6c181",
+  -- yellow = "#e6c181",
+  yellow = "#ffff00",
   sun = "#fce668",
   -- purple = "#c885d7",
   purple = "#ae81ff",
@@ -131,7 +133,14 @@ M.polish_hl = {
   TelescopeNormal = { bg = M.base_30.black2 },
   TelescopePromptNormal = { bg = M.base_30.black2 },
   -- diffNewFile = { fg = "blue" },  -- TODO: not working, only when added on M.add
-
+  WinSeparator = { fg = M.base_30.cyan }, -- cyan is beautiful and also is the color of the border of the windows
+  -- make insert mode green which is more visually intuitive that we are modifying something
+  St_InsertMode = { bg = M.base_30.green },
+  St_InsertModeSep = { fg = M.base_30.green },
+  -- make terminal mode much more shiny becuase is important to know it
+  St_TerminalMode = { bg = M.base_30.yellow },
+  St_TerminalModeSep = { fg = M.base_30.yellow },
+  -- WinSeparator = { fg = M.base_30.sun },
   -- ["@diffNewFile"] = { fg = M.base_30.blue }, -- not working, needs to be in section "added" ?
   -- ["@punctuation.bracket"] = { fg = M.base_30.green },
   -- ["@boolean"] = { fg = M.base_16.base09 },
