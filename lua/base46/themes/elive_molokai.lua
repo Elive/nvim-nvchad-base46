@@ -56,6 +56,7 @@ M.base_30 = {
   -- darker_black = "#17121e", --   - 6%+ darker than black
   -- darker_black = "#191b1c", --   - 6%+ darker than black
   darker_black = "#291d3f", --   - 6%+ darker than black
+  -- darker_black = "#261732", --   - 6%+ darker than black  -- this version looks better on kitty but not on 256 colors terminals
   -- black2 = "#252931",  -- tab top line - 6%+ lighter than black
   -- black2 = "#251d31",  -- tab top line - 6%+ lighter than black
   black2 = "#282b2c",  -- tab top line - 6%+ lighter than black
@@ -118,7 +119,16 @@ M.base_30 = {
 
 M.polish_hl = {
   ["@variable"] = { fg = M.base_30.orange },
+  -- ["@variable"] = { fg = M.base_30.green },
+  -- ["@variable"] = { fg = M.base_30.blue },
+  ["@constant"] = { fg = M.base_30.orange },
+  -- ["@constant"] = { fg = M.base_30.nord_blue },
+  ["@punctuation.special"] = { fg = M.base_30.green },
+  -- ["@punctuation.bracket"] = { fg = M.base_30.green },
   ["@operator"] = { fg = M.base_30.red },
+  -- ["@function.call"] = { fg = M.base_30.white },
+  ["@function.call"] = { fg = M.base_30.red },
+  -- ["@function.call"] = { fg = M.base_30.green },
   -- make the folded blocks having a transparent background, the text is already very visible
   Folded = { bg = "NONE" },
   -- make the background of the completer menu a little different
