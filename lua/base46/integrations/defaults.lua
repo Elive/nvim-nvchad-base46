@@ -14,7 +14,7 @@ local defaults = {
   PmenuSel = { bg = colors.pmenu_bg, fg = colors.black },
   PmenuThumb = { bg = colors.grey },
 
-  # extra defaults
+  -- extra defaults
   CopilotSuggestion = { fg = colors.grey_fg },
   MiniIndentscopeSymbol = { fg = colors.blue },
 
