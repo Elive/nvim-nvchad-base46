@@ -148,6 +148,8 @@ M.polish_hl = {
   -- make insert mode green which is more visually intuitive that we are modifying something
   St_InsertMode = { bg = M.base_30.green },
   St_InsertModeSep = { fg = M.base_30.green },
+  St_CommandMode = { bg = M.base_30.pink },
+  St_CommandModeSep = { fg = M.base_30.pink },
   -- make terminal mode much more shiny becuase is important to know it
   St_TerminalMode = { bg = M.base_30.yellow },
   St_TerminalModeSep = { fg = M.base_30.yellow },
