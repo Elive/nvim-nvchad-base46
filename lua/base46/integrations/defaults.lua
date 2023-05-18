@@ -17,6 +17,7 @@ local defaults = {
   -- extra defaults
   CopilotSuggestion = { fg = colors.grey_fg },
   MiniIndentscopeSymbol = { fg = colors.blue },
+  DiagnosticVirtualTextInfo = { fg = colors.black, bg = colors.teal },
 
   MatchParen = { link = "MatchWord" },
 
