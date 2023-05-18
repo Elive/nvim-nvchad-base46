@@ -15,9 +15,9 @@ local defaults = {
   PmenuThumb = { bg = colors.grey },
 
   -- extra defaults
-  CopilotSuggestion = { fg = colors.grey_fg },
-  MiniIndentscopeSymbol = { fg = colors.blue },
-  DiagnosticVirtualTextInfo = { fg = colors.black, bg = colors.teal },
+  CopilotSuggestion = { fg = colors.grey_fg }, -- Copilot suggestions
+  MiniIndentscopeSymbol = { fg = colors.blue }, -- animated vertical bar for indent scope
+  NoiceVirtualText = { fg = colors.black, bg = colors.teal }, -- text results when incrementally search using Noice
 
   MatchParen = { link = "MatchWord" },
 
