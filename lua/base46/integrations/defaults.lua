@@ -17,7 +17,7 @@ local defaults = {
   -- extra defaults
   CopilotSuggestion = { fg = colors.grey_fg }, -- Copilot suggestions
   MiniIndentscopeSymbol = { fg = colors.blue }, -- animated vertical bar for indent scope
-  NoiceVirtualText = { fg = colors.black, bg = colors.teal }, -- text results when incrementally search using Noice
+  NoiceVirtualText = { fg = colors.black, bg = colors.pink }, -- text results when incrementally search using Noice
 
   MatchParen = { link = "MatchWord" },
 
